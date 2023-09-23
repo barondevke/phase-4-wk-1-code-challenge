@@ -6,7 +6,7 @@ from sqlalchemy.orm import validates
 db = SQLAlchemy()
 
 
-class Restaurant(db.model):
+class Restaurant(db.Model):
     __tablename__ = 'restaurant'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -14,7 +14,7 @@ class Restaurant(db.model):
     address = db.Column(db.String)
 
 
-class Pizzas(db.model):
+class Pizzas(db.Model):
     __tablename__ = 'pizzas'
 
     id = db.Column(db.Integer, primary_key=True)
